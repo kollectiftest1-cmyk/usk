@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../../assets/logo.JPEG';
+import logo from '../../assets/logo.jpeg';
 import './Header.css';
 
 const Header = () => {
