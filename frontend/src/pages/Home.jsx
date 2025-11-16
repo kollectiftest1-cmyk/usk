@@ -5,7 +5,7 @@ import { FaGraduationCap, FaUsers, FaAward, FaGlobe, FaArrowRight } from 'react-
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { facultyData } from '../data/facultyData';
-import logo from '../assets/logo.JPEG';
+import logo from '../assets/logo.jpeg';
 import './Home.css';
 
 gsap.registerPlugin(ScrollTrigger);
