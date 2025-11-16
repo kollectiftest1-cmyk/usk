@@ -1,0 +1,175 @@
+/* Header Styles */
+.header-navbar {
+  background-color: var(--color-primary);
+  padding: 1rem 0;
+  transition: all var(--transition-medium);
+  box-shadow: none;
+}
+
+.header-navbar.scrolled {
+  background-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  padding: 0.5rem 0;
+}
+
+/* Logo et Brand */
+.brand-logo {
+  text-decoration: none !important;
+}
+.logo-image{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-action));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  transition: transform var(--transition-fast);
+}
+
+.logo-circle:hover {
+  transform: rotate(360deg);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-background);
+  line-height: 1.2;
+}
+
+.brand-slogan {
+  font-size: 0.75rem;
+  color: var(--color-action);
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+  color: var(--color-background) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.25rem;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--color-action) !important;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--color-action);
+  transition: width var(--transition-fast);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 80%;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--color-action) !important;
+}
+
+/* Toggle Button */
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+  color: var(--color-background);
+  font-size: 1.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: 2px solid var(--color-action);
+}
+
+/* CTA Button dans Header */
+.header-navbar .btn-primary-custom {
+  font-size: 0.95rem;
+  padding: 0.6rem 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: var(--color-primary-dark);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.75rem 1rem !important;
+  }
+
+  .navbar-nav .nav-link::after {
+    display: none;
+  }
+
+  .header-navbar .btn-primary-custom {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .brand-name {
+    font-size: 0.95rem;
+  }
+
+  .logo-circle {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-name {
+    font-size: 0.85rem;
+  }
+
+  .brand-slogan {
+    font-size: 0.65rem;
+  }
+
+  .logo-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .logo-container {
+    gap: 0.5rem;
+  }
+}

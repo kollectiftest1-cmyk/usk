@@ -1,0 +1,99 @@
+/* Charte Graphique USK - Variables CSS */
+
+:root {
+  /* Couleurs Primaires */
+  --color-primary: #0E3360;        /* Bleu Marine/Encre - Institutionnel */
+  --color-secondary: #27AEE4;      /* Bleu Ciel/Clair - Dynamique */
+  --color-action: #FFC107;         /* Jaune Or/Vif - CTA */
+  --color-background: #FFFFFF;     /* Blanc - Fond */
+  --color-text: #1F2937;           /* Gris Foncé - Texte */
+  --color-text-light: #6B7280;     /* Gris Moyen - Texte secondaire */
+
+  /* Variantes de couleurs */
+  --color-primary-dark: #081f3d;
+  --color-primary-light: #1a4a7e;
+  --color-secondary-light: #4fc3f0;
+  --color-action-hover: #ffb300;
+
+  /* Typographie */
+  --font-primary: 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --font-body: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Tailles de police */
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-large: 18px;
+  --font-size-h1: 3rem;            /* 48px */
+  --font-size-h2: 2.5rem;          /* 40px */
+  --font-size-h3: 2rem;            /* 32px */
+  --font-size-h4: 1.5rem;          /* 24px */
+  --font-size-h5: 1.25rem;         /* 20px */
+  --font-size-h6: 1rem;            /* 16px */
+
+  /* Espacements */
+  --spacing-xs: 0.25rem;           /* 4px */
+  --spacing-sm: 0.5rem;            /* 8px */
+  --spacing-md: 1rem;              /* 16px */
+  --spacing-lg: 1.5rem;            /* 24px */
+  --spacing-xl: 2rem;              /* 32px */
+  --spacing-2xl: 3rem;             /* 48px */
+  --spacing-3xl: 4rem;             /* 64px */
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-medium: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+
+  /* Ombres */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 12px 24px -8px rgba(14, 51, 96, 0.25);
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;            /* 4px */
+  --radius-md: 0.5rem;             /* 8px */
+  --radius-lg: 0.75rem;            /* 12px */
+  --radius-xl: 1rem;               /* 16px */
+  --radius-full: 9999px;
+
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+
+  /* Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+
+  /* Container max-width */
+  --container-max-width: 1200px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  :root {
+    --font-size-h1: 2.25rem;       /* 36px */
+    --font-size-h2: 2rem;          /* 32px */
+    --font-size-h3: 1.75rem;       /* 28px */
+    --font-size-h4: 1.375rem;      /* 22px */
+    --font-size-h5: 1.125rem;      /* 18px */
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-h1: 2rem;          /* 32px */
+    --font-size-h2: 1.75rem;       /* 28px */
+    --font-size-h3: 1.5rem;        /* 24px */
+    --font-size-h4: 1.25rem;       /* 20px */
+  }
+}

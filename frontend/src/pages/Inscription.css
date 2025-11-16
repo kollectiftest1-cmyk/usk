@@ -1,0 +1,161 @@
+/* --- General Page Styles --- */
+.inscription-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.py-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* --- Hero Section --- */
+.inscription-hero {
+  position: relative;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../assets/hero.png') no-repeat center center/cover;
+  color: #fff;
+}
+
+.inscription-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 51, 96, 0.75);
+}
+
+.inscription-hero .hero-content {
+  margin-top: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.inscription-hero .hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.inscription-hero .hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* --- Form Section --- */
+.inscription-wrapper {
+  max-width: 800px;
+  margin: -80px auto 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+/* --- Progress Bar --- */
+.progress-bar-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+  position: relative;
+  flex-grow: 1;
+}
+
+.step-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #e0e0e0;
+  z-index: 1;
+}
+
+.step-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.step-name {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.step-item.active .step-icon,
+.step-item.completed .step-icon {
+  background-color: #27AEE4;
+  color: #fff;
+}
+
+.step-item.active .step-name,
+.step-item.completed .step-name {
+  color: #0E3360;
+}
+
+.step-item.completed:not(:last-child)::after {
+  background-color: #27AEE4;
+}
+
+/* --- Form Card --- */
+.form-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.form-card .card-body {
+  padding: 2.5rem;
+}
+
+.form-card .card-title {
+  color: #0E3360;
+  font-weight: 700;
+}
+
+/* --- Summary --- */
+.summary-wrapper {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.summary-wrapper h4 {
+  color: #0E3360;
+  margin-top: 1rem;
+}
+
+/* --- Navigation --- */
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.form-navigation .btn {
+  padding: 0.7rem 2rem;
+  font-weight: 600;
+}

@@ -1,0 +1,167 @@
+/* --- General Page Styles --- */
+.presentation-page {
+  background-color: #fff;
+  color: #1F2937;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #0E3360;
+  margin-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+/* --- Hero Section --- */
+.presentation-hero {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(135deg, rgba(14, 51, 96, 0.95), rgba(5, 23, 46, 0.95)), url('../assets/hero.JPEG'); */
+
+  background: url('../assets/hero.png') no-repeat center center/cover;
+  color: #fff;
+}
+
+.presentation-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 51, 96, 0.7);
+}
+
+.presentation-hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.presentation-hero .hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.presentation-hero .hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* --- History Section --- */
+.history-section .history-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4f8;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+.history-section .history-icon {
+  font-size: 10rem;
+  color: #27AEE4;
+}
+
+/* --- Mission & Vision Section --- */
+.mission-vision-section .presentation-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  height: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mission-vision-section .presentation-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.mission-vision-section .card-icon {
+  font-size: 3rem;
+  color: #FFC107;
+  margin-bottom: 1rem;
+}
+
+/* --- Values Section --- */
+.values-section .value-card {
+  padding: 2rem 1rem;
+  transition: transform 0.3s;
+}
+
+.values-section .value-card:hover {
+  transform: translateY(-5px);
+}
+
+.values-section .value-icon {
+  font-size: 3rem;
+  color: #27AEE4;
+  margin-bottom: 1rem;
+}
+
+/* --- Strengths Section --- */
+.strengths-section .strength-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.strengths-section .strength-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.strengths-section .strength-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #27AEE4;
+  margin-bottom: 0.5rem;
+}
+
+/* --- CTA Section --- */
+.cta-section-presentation {
+  background-color: #0E3360;
+  color: #fff;
+}
+
+.cta-section-presentation .cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cta-section-presentation .cta-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.cta-section-presentation .btn-primary-custom {
+  background-color: #FFC107;
+  border-color: #FFC107;
+  color: #0E3360;
+}
+
+.cta-section-presentation .btn-outline-custom {
+  border-color: #fff;
+  color: #fff;
+}
+
+.cta-section-presentation .btn-outline-custom:hover {
+  background-color: #fff;
+  color: #0E3360;
+}

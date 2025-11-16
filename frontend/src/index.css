@@ -1,0 +1,4 @@
+/* Import Bootstrap et styles personnalisés USK */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import './styles/variables.css';
+@import './styles/global.css';

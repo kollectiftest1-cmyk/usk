@@ -1,0 +1,189 @@
+/* --- General Page Styles --- */
+.promotions-page {
+  background-color: #fff;
+  color: #1F2937;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #0E3360;
+  margin-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+/* --- Hero Section --- */
+.promotions-hero {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://via.placeholder.com/1920x1080/0E3360/FFFFFF?text=Vie+Étudiante') no-repeat center center/cover;
+  color: #fff;
+}
+
+.promotions-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 51, 96, 0.7);
+}
+
+.promotions-hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.promotions-hero .hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.promotions-hero .hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* --- Offers Section --- */
+.offer-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(39, 174, 228, 0.2);
+}
+
+.offer-card .offer-icon {
+  font-size: 3rem;
+  color: #27AEE4;
+  margin-bottom: 1rem;
+}
+
+.offer-card .card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #0E3360;
+  font-size: 1.5rem;
+}
+
+.offer-card .offer-badge {
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background-color: #FFC107;
+  color: #0E3360;
+  padding: 5px 30px;
+  font-weight: 700;
+  transform: rotate(45deg);
+  font-size: 0.8rem;
+}
+
+/* --- Testimonials Section --- */
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2.5rem;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card .quote-icon {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 2.5rem;
+  color: #27AEE4;
+  opacity: 0.2;
+}
+
+.testimonial-card .quote-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-card .quote-author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.testimonial-card .quote-author strong {
+  font-weight: 700;
+  color: #0E3360;
+}
+
+.testimonial-card .quote-author span {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* --- Student Life Section --- */
+.student-life-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.student-life-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 1rem;
+}
+
+.student-life-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #27AEE4;
+  font-weight: 700;
+}
+
+/* --- CTA Section --- */
+.cta-section-promotions {
+  background-color: #0E3360;
+  color: #fff;
+}
+
+.cta-section-promotions .cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cta-section-promotions .cta-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.cta-section-promotions .btn-primary-custom {
+  background-color: #FFC107;
+  border-color: #FFC107;
+  color: #0E3360;
+  padding: 0.8rem 2rem;
+  transition: transform 0.3s;
+}
+
+.cta-section-promotions .btn-primary-custom:hover {
+  transform: scale(1.05);
+}
